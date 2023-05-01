@@ -7,7 +7,7 @@
         "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
         "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
         "https://stac-extensions.github.io/grid/v1.0.0/schema.json",
-        "https://stac-extensions.github.io/example-links/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/example-links/v1.0.0/schema.json"
     ],
     "id": "36/120022103032/104001008314FC00",
     "properties": {
