@@ -1,0 +1,305 @@
+{
+    "type": "Feature",
+    "stac_version": "1.0.0",
+    "stac_extensions": [
+        "https://stac-extensions.github.io/view/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/projection/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
+        "https://stac-extensions.github.io/grid/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/example-links/v1.0.0/schema.json",
+    ],
+    "id": "36/120022103032/104001008314FC00",
+    "properties": {
+        "datetime": "2023-02-21 08:45:01Z",
+        "platform": "WV03",
+        "gsd": 0.38,
+        "ard_metadata_version": "0.0.1",
+        "catalog_id": "104001008314FC00",
+        "utm_zone": 36,
+        "quadkey": "120022103032",
+        "view:off_nadir": 27.8,
+        "view:azimuth": 252.4,
+        "view:incidence_angle": 59.2,
+        "view:sun_azimuth": 158.3,
+        "view:sun_elevation": 40.1,
+        "proj:epsg": 32636,
+        "proj:geometry": {
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [
+                        715154.1137695312,
+                        4102918.0908203125
+                    ],
+                    [
+                        715156.25,
+                        4099843.75
+                    ],
+                    [
+                        709843.75,
+                        4099843.75
+                    ],
+                    [
+                        709843.75,
+                        4102370.9106445312
+                    ],
+                    [
+                        715154.1137695312,
+                        4102918.0908203125
+                    ]
+                ]
+            ]
+        },
+        "grid:code": "MXRA-Z36-120022103032",
+        "proj:bbox": [
+            709843.75,
+            4099843.75,
+            715156.25,
+            4102918.0908203125
+        ],
+        "tile:data_area": 14.8,
+        "tile:clouds_area": 0.4,
+        "tile:clouds_percent": 3
+    },
+    "bbox": [
+        35.35890430368277,
+        37.020158665924086,
+        35.419430318017355,
+        37.0478476623991
+    ],
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    35.419430318017355,
+                    37.0478476623991
+                ],
+                [
+                    35.41857557108883,
+                    37.020158665924086
+                ],
+                [
+                    35.35890430368277,
+                    37.02136045688774
+                ],
+                [
+                    35.35960878415112,
+                    37.044121880162464
+                ],
+                [
+                    35.419430318017355,
+                    37.0478476623991
+                ]
+            ]
+        ]
+    },
+    "links": [
+        {
+            "rel": "collection",
+            "href": "../../../acquisition_collections/104001008314FC00_collection.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "../../../acquisition_collections/104001008314FC00_collection.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "../../../order_collections/6127128680202720131_root_collection.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "example",
+            "href": "https://ard.maxar.com/docs/sdk/sdk/ard-collections/#ard-tiles",
+            "title": "Working with ARD",
+            "type": "text/html",
+            "description": "A user guide to working with ARD tiles using the Python SDK",
+            "example:language": "Python",
+            "example:container": true
+        },
+        {
+            "rel": "example",
+            "href": "https://ard.maxar.com/docs/sdk/examples/ard-collections.ipynb",
+            "title": "Working with ARD Jupyter Notebook",
+            "type": "application/x-ipynb+json",
+            "description": "A Jupyter notebook that demonstrates working with ARD tiles using the Python SDK",
+            "example:language": "Python",
+            "example:container": true
+        },
+        {
+            "rel": "example",
+            "href": "https://ard.maxar.com/docs/working-with-ard/command-line-tools/#gdalogr-command-line-tools",
+            "title": "Command Line Tools and Examples",
+            "type": "text/html",
+            "description": "Examples of using ARD tiles with command line tools",
+            "example:language": "Shell",
+            "example:container": true
+        }
+    ],
+    "assets": {
+        "data-mask": {
+            "type": "application/geopackage+sqlite3",
+            "title": "Data Mask",
+            "href": "./104001008314FC00-data-mask.gpkg",
+            "roles": [
+                "data-mask"
+            ]
+        },
+        "ms_analytic": {
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "title": "Multispectral Image",
+            "href": "./104001008314FC00-ms.tif",
+            "proj:bbox": [
+                709843.75,
+                4099843.75,
+                715156.25,
+                4105156.25
+            ],
+            "proj:shape": [
+                3708,
+                3708
+            ],
+            "proj:transform": [
+                1.432713052858684,
+                0.0,
+                709843.75,
+                0.0,
+                -1.432713052858684,
+                4105156.25,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "eo:bands": [
+                {
+                    "name": "BAND_C",
+                    "common_name": "coastal",
+                    "description": "Coastal Blue"
+                },
+                {
+                    "name": "BAND_B",
+                    "common_name": "blue",
+                    "description": "Blue"
+                },
+                {
+                    "name": "BAND_G",
+                    "common_name": "green",
+                    "description": "Green"
+                },
+                {
+                    "name": "BAND_Y",
+                    "common_name": "yellow",
+                    "description": "Yellow"
+                },
+                {
+                    "name": "BAND_R",
+                    "common_name": "red",
+                    "description": "Red"
+                },
+                {
+                    "name": "BAND_RE",
+                    "common_name": "rededge",
+                    "description": "Red Edge 1"
+                },
+                {
+                    "name": "BAND_N",
+                    "common_name": "nir08",
+                    "description": "Near Infrared 1"
+                },
+                {
+                    "name": "BAND_N2",
+                    "common_name": "nir09",
+                    "description": "Near Infrared 2"
+                }
+            ],
+            "roles": [
+                "data"
+            ]
+        },
+        "pan_analytic": {
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "title": "Panchromatic Image",
+            "href": "./104001008314FC00-pan.tif",
+            "proj:bbox": [
+                709843.75,
+                4099843.75,
+                715156.25,
+                4105156.25
+            ],
+            "proj:shape": [
+                14832,
+                14832
+            ],
+            "proj:transform": [
+                0.358178263214671,
+                0.0,
+                709843.75,
+                0.0,
+                -0.358178263214671,
+                4105156.25,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "eo:bands": [
+                {
+                    "name": "BAND_P",
+                    "description": "Pan"
+                }
+            ],
+            "roles": [
+                "data"
+            ]
+        },
+        "visual": {
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "title": "Visual Image",
+            "href": "./104001008314FC00-visual.tif",
+            "proj:bbox": [
+                709843.75,
+                4099843.75,
+                715156.25,
+                4105156.25
+            ],
+            "proj:shape": [
+                17408,
+                17408
+            ],
+            "proj:transform": [
+                0.30517578125,
+                0.0,
+                709843.75,
+                0.0,
+                -0.30517578125,
+                4105156.25,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "eo:bands": [
+                {
+                    "name": "BAND_R",
+                    "common_name": "red",
+                    "description": "Red"
+                },
+                {
+                    "name": "BAND_G",
+                    "common_name": "green",
+                    "description": "Green"
+                },
+                {
+                    "name": "BAND_B",
+                    "common_name": "blue",
+                    "description": "Blue"
+                }
+            ],
+            "roles": [
+                "visual"
+            ]
+        }
+    },
+    "collection": "104001008314FC00"
+}
